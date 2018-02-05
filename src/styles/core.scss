@@ -1,0 +1,24 @@
+@import 'base';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background: rgb(53, 105, 129);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

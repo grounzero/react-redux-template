@@ -1,0 +1,19 @@
+@import '../../styles/base';
+#user-details {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 0.5em;
+  border-left: 1px solid $default-border-color;
+  background: #00adff;
+  img {
+    margin: auto;
+  }
+  span {
+    color: white;
+    font-weight: bold;
+    margin-left: 0.2em;
+    margin-top: 5px;
+  }
+}

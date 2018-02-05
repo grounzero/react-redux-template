@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamDetails renders correctly 1`] = `
+<article>
+  <h2
+    className="ui top attached header"
+  >
+    
+  </h2>
+  <div
+    className="ui attached segment"
+  >
+    <form
+      action={undefined}
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="equal width fields"
+      >
+        <div
+          className="field"
+        >
+          <label
+            htmlFor={undefined}
+          >
+            Name
+          </label>
+          <div
+            className="ui input"
+          >
+            <input
+              disabled={undefined}
+              name="name"
+              onChange={[Function]}
+              placeholder="Name"
+              required={undefined}
+              tabIndex={undefined}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        className="ui primary button"
+        disabled={undefined}
+        onClick={[Function]}
+        tabIndex={undefined}
+        type="submit"
+      >
+        Save
+      </button>
+    </form>
+  </div>
+</article>
+`;

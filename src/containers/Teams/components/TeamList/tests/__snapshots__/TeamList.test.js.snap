@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamList renders correctly 1`] = `
+<table
+  className="ui celled compact table"
+>
+  <thead
+    className=""
+  >
+    <tr
+      className=""
+    >
+      <th
+        className=""
+      >
+        Name
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className=""
+  />
+</table>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamDetailsSidebar renders correctly 1`] = `
+<div
+  id="team-details-sidebar"
+>
+  <nav>
+    <div
+      className="ui vertical menu"
+    />
+  </nav>
+</div>
+`;

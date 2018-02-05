@@ -1,0 +1,146 @@
+@keyframes animate-left {
+  0% {
+    left: -211px;
+    opacity: 0; }
+  100% {
+    left: 211px;
+    opacity: 1; } }
+
+@keyframes animate-right {
+  0% {
+    right: -211px;
+    opacity: 0; }
+  100% {
+    right: 211px;
+    opacity: 1; } }
+
+#main-layout, #main-layout.sidebar-left-collapsed, #main-layout.sidebar-right-collapsed {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  margin: 0 auto;
+  min-width: 900px;
+  max-width: 1400px;
+  min-height: 420px;
+  border: 1px solid #354052;
+  background: whitesmoke;
+  padding-left: 211px;
+  overflow: hidden; }
+  #main-layout #main-layout-sidebar-left, .sidebar-left-collapsed#main-layout #main-layout-sidebar-left {
+    width: 211px;
+    z-index: 1000;
+    position: absolute;
+    left: -211px;
+    height: 100%;
+    margin-left: 211px;
+    overflow-y: auto;
+    background: #354052;
+    transition: all 0.3s ease-in-out; }
+    #main-layout #main-layout-sidebar-left div.ui.vertical.menu {
+      background: transparent; }
+      #main-layout #main-layout-sidebar-left div.ui.vertical.menu a {
+        color: white;
+        border-radius: 0px !important; }
+    #main-layout #main-layout-sidebar-left div.ui.raised.card {
+      background: transparent;
+      margin: 0;
+      border-radius: 0px;
+      box-shadow: none; }
+      #main-layout #main-layout-sidebar-left div.ui.raised.card > img {
+        border-radius: 50px !important;
+        padding: 1em; }
+      #main-layout #main-layout-sidebar-left div.ui.raised.card > .content {
+        border: none !important;
+        padding: 0; }
+        #main-layout #main-layout-sidebar-left div.ui.raised.card > .content > div {
+          text-align: center;
+          color: white; }
+  #main-layout #main-layout-sidebar-right, .sidebar-right-collapsed#main-layout #main-layout-sidebar-right {
+    position: absolute;
+    right: -211px;
+    margin-right: 211px;
+    overflow-y: auto;
+    top: 2.2em;
+    bottom: 2em;
+    transition: all 0.3s ease-in-out;
+    width: 211px;
+    background: white;
+    border-left: 1px solid gainsboro; }
+  #main-layout #main-layout-container, .sidebar-left-collapsed#main-layout #main-layout-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 211px;
+    animation: animate-left 0.3s;
+    transition: all 0.3s ease-in-out;
+    border-left: 1px solid #354052; }
+  #main-layout #main-layout-content, .sidebar-right-collapsed#main-layout #main-layout-content {
+    position: absolute;
+    top: 2.2em;
+    right: 211px;
+    bottom: 2em;
+    left: 0;
+    background: whitesmoke;
+    animation: animate-right 0.3s;
+    transition: all 0.3s ease-in-out; }
+    #main-layout #main-layout-content .ui.attached.segment {
+      min-height: 20em; }
+  #main-layout #main-layout-content-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.8em 0.65em; }
+
+.sidebar-left-collapsed#main-layout {
+  padding-left: 0; }
+  .sidebar-left-collapsed#main-layout #main-layout-sidebar-left {
+    border-right: none;
+    width: 0; }
+  .sidebar-left-collapsed#main-layout #main-layout-container {
+    margin-right: 0;
+    left: 0;
+    border-left: none; }
+
+.sidebar-right-collapsed#main-layout {
+  padding-left: 0; }
+  .sidebar-right-collapsed#main-layout #main-layout-sidebar-right {
+    width: 2.2em;
+    overflow: hidden; }
+    .sidebar-right-collapsed#main-layout #main-layout-sidebar-right .sidebar-content {
+      opacity: 0; }
+  .sidebar-right-collapsed#main-layout #main-layout-content {
+    right: 2.2em; }
+
+.main-layout {
+  padding: 0.5em; }
+
+#main-layout-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2.2em;
+  margin-top: 0;
+  background: white;
+  color: gainsboro;
+  border-bottom: 1px solid gainsboro; }
+  #main-layout-header > div {
+    display: flex;
+    height: 100%; }
+
+#main-layout-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2em;
+  text-align: center;
+  padding: 0.3em;
+  background: white;
+  color: #929292;
+  border-top: 1px solid gainsboro; }

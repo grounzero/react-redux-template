@@ -1,0 +1,38 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/statswebapi/app/build/",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "history": "^4.7.2",
+    "lodash": "^4.17.4",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.0.2",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-redux-toastr": "^7.1.5",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.10",
+    "react-test-renderer": "^15.6.1",
+    "redux": "^3.7.2",
+    "redux-immutable-state-invariant": "^2.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.2.3",
+    "redux-thunk": "^2.2.0",
+    "seamless-immutable": "^7.1.2",
+    "semantic-ui-react": "^0.71.3"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build && npm run build:clean",
+    "build:clean": "cd build && rename static\\js\\main.*.js main.js && rename static\\js\\main.*.js.map main.js.map && rename static\\css\\main.*.css main.css && rename static\\css\\main.*.css.map main.css.map",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
