@@ -53,7 +53,7 @@ class App extends Component {
                     <Card raised>
                         <Image src={AppIcon} />
                         <Card.Content>
-                            <Card.Header>All-Stars Stats</Card.Header>
+                            <Card.Header>Redux Template</Card.Header>
                         </Card.Content>
                     </Card>
                     <Divider />
