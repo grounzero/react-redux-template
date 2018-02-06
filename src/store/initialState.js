@@ -5,12 +5,12 @@ const _initialState = {
       username: 'dev'
     },
     versionInfo: {
-      company: 'Sky Graphics & Data Solutions',
-      copyright: 'Copyright © 2017',
-      date: '01 January 2017',
+      company: 'Michael Grounds',
+      copyright: 'Copyright © 2018',
+      date: '01 January 2018',
       description: '',
-      product: 'Sports All-Stars Stats',
-      title: 'Sports All-Stars Stats',
+      product: 'React Redux Template',
+      title: 'React Redux Template',
       version: '0.1.0'
     }
   },
