@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "/statswebapi/app/build/",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "history": "^4.7.2",
     "lodash": "^4.17.5",
     "node-sass-chokidar": "0.0.3",
